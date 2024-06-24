@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         resultDiv.classList.add('hidden');
 
         try {
-            const response = await fetch('https://crystalgpt.azurewebsites.net/api/httptrigger5', {
+            const response = await fetch('https://scg12.azurewebsites.net/api/HttpTrigger1', {
                 method: 'POST',
                 body: formData
             });
