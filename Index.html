@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spiritual Crystal Identifier</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Spiritual Crystal Identifier</h1>
+        <form id="crystalForm">
+            <div class="form-group">
+                <label for="message">Describe your crystal or ask a question:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="crystalImage">Upload an image of your crystal:</label>
+                <input type="file" id="crystalImage" name="file" accept="image/*">
+            </div>
+            <button type="submit">Analyze Crystal</button>
+        </form>
+        <div id="result" class="hidden">
+            <h2>Crystal Analysis:</h2>
+            <p id="analysisResult"></p>
+        </div>
+        <div id="loading" class="hidden">Analyzing your crystal...</div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
