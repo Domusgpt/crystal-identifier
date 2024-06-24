@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         resultDiv.classList.add('hidden');
 
         try {
-            const response = await fetch('YOUR_AZURE_FUNCTION_URL', {
+            const response = await fetch('https://crystalgpt.azurewebsites.net/api/httptrigger5', {
                 method: 'POST',
                 body: formData
             });
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
             loadingDiv.classList.add('hidden');
             resultDiv.classList.remove('hidden');
             
-            analysisResult.textContent = data.analysis;
+            analysisResult.textContent = data.message;
         } catch (error) {
             console.error('Error:', error);
             loadingDiv.classList.add('hidden');
